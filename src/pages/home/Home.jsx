@@ -6,6 +6,7 @@ import Card from "../detail/Card";
 const Home = () => {
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const [displayCount, setDisplayCount] = useState(6);
 
   useEffect(() => {
     axios
@@ -16,12 +17,18 @@ const Home = () => {
       .catch((err) => console.log(err));
   }, [currentPage]);
 
+  // Function to handle the "Show More" button click
+  const handleShowMoreClick = () => {
+    // Increment the display count by 3
+    setDisplayCount(displayCount + 3);
+  };
+
   return (
     <div className="home-wrapper">
       <h1 className="heading">Featured Listed Property</h1>
       <p className="para">
         Real estate can be bought, sold, leased, or rented, and can be a
-        valuable investment oppurtunity. The value of estate can be...
+        valuable investment opportunity. The value of the estate can be...
       </p>
       <div className="fltr-btns">
         <button className="active">London</button>
@@ -30,11 +37,15 @@ const Home = () => {
         <button>New York</button>
       </div>
       <div className="card-list">
-        {data.map((item, index) => (
+        {data.slice(0, displayCount).map((item, index) => (
           <Card key={index} data={item} />
         ))}
       </div>
-      <button className="show-more">Show More</button>
+      {displayCount < data.length && (
+        <button className="show-more" onClick={handleShowMoreClick}>
+          Show More
+        </button>
+      )}
     </div>
   );
 };
