@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-block: 1.2rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  //   height: 80px;
+  border: 2px solid red;
+  background: transparent;
+  z-index: 2;
+  .logo {
+    font-size: 2rem;
+    font-weight: 900;
+    width: 45%;
+    display: inline;
+    color: var(--primary-color);
+  }
+  nav {
+    width: 30%;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.2rem;
+    }
+  }
+}
