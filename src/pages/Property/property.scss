@@ -9,6 +9,31 @@
     width: 30%;
     margin: 0 auto;
   }
+  .fltrBtns {
+    width: 50%;
+    margin-left: 4rem;
+    margin-block: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      padding: 8px 20px;
+      border: 2px solid var(--primary-color);
+      color: var(--primary-color);
+      border-radius: 20px;
+      outline: none;
+      transition: 0.2s ease background-color;
+      &:hover {
+        background-color: var(--secondary-color);
+        color: white;
+      }
+    }
+    .active {
+      background-color: var(--primary-color);
+      color: white;
+      font-weight: 900;
+    }
+  }
   .properties {
     margin-top: 2rem;
     display: flex;
@@ -85,6 +110,11 @@
             border-radius: 20px;
             color: var(--primary-color);
             font-weight: 900;
+            transition: 0.2s ease-in background-color;
+            &:hover {
+              color: white;
+              background-color: var(--primary-color);
+            }
           }
         }
       }

@@ -19,6 +19,7 @@ createServer({
       price: "7,255",
       forRent: true,
       popular: false,
+      niche: "nc",
     });
     server.create("property", {
       id: 2,
@@ -33,6 +34,7 @@ createServer({
       price: "7,255",
       forRent: true,
       popular: true,
+      niche: "london",
     });
     server.create("property", {
       id: 3,
@@ -47,6 +49,7 @@ createServer({
       price: "5,256",
       forRent: false,
       popular: true,
+      niche: "london",
     });
     server.create("property", {
       id: 4,
@@ -61,6 +64,7 @@ createServer({
       price: "7,255",
       forRent: true,
       popular: false,
+      niche: "nc",
     });
     server.create("property", {
       id: 5,
@@ -75,6 +79,7 @@ createServer({
       price: "7,255",
       forRent: false,
       popular: true,
+      niche: "nc",
     });
     server.create("property", {
       id: 6,
@@ -89,6 +94,7 @@ createServer({
       price: "7,255",
       forRent: true,
       popular: false,
+      niche: "nc",
     });
     server.create("property", {
       id: 7,
@@ -103,6 +109,7 @@ createServer({
       price: "5,500",
       forRent: false,
       popular: true,
+      niche: "mumbai",
     });
     server.create("property", {
       id: 8,
@@ -117,6 +124,7 @@ createServer({
       price: "3,000",
       forRent: true,
       popular: true,
+      niche: "paris",
     });
     server.create("property", {
       id: 9,
@@ -131,6 +139,7 @@ createServer({
       price: "15,000",
       forRent: false,
       popular: false,
+      niche: "paris",
     });
     server.create("property", {
       id: 10,
@@ -145,6 +154,7 @@ createServer({
       price: "8,500",
       forRent: true,
       popular: true,
+      niche: "paris",
     });
     server.create("property", {
       id: 11,
@@ -159,6 +169,7 @@ createServer({
       price: "5,800",
       forRent: true,
       popular: true,
+      niche: "london",
     });
     server.create("property", {
       id: 12,
@@ -173,6 +184,7 @@ createServer({
       price: "6,200",
       forRent: true,
       popular: false,
+      niche: "london",
     });
     server.create("property", {
       id: 13,
@@ -187,6 +199,7 @@ createServer({
       price: "3,200",
       forRent: true,
       popular: false,
+      niche: "london",
     });
     server.create("property", {
       id: 14,
@@ -201,6 +214,7 @@ createServer({
       price: "4,800",
       forRent: true,
       popular: true,
+      niche: "london",
     });
     server.create("property", {
       id: 15,
@@ -215,6 +229,7 @@ createServer({
       price: "3,000",
       forRent: true,
       popular: false,
+      niche: "paris",
     });
     server.create("property", {
       id: 16,
@@ -229,6 +244,7 @@ createServer({
       price: "7,255",
       forRent: true,
       popular: false,
+      niche: "nc",
     });
     server.create("property", {
       id: 17,
@@ -243,6 +259,7 @@ createServer({
       price: "3,500",
       forRent: true,
       popular: true,
+      niche: "nc",
     });
     server.create("property", {
       id: 18,
@@ -257,12 +274,13 @@ createServer({
       price: "12,000",
       forRent: true,
       popular: true,
+      niche: "nc",
     });
     server.create("property", {
       id: 19,
       imgSrc:
         "https://images.pexels.com/photos/3625711/pexels-photo-3625711.jpeg?auto=compress&cs=tinysrgb&w=600",
-      name: "Quaint Cottage - 456 Oak Ln, Austin, TX 78702",
+      name: "Quaint Cottage - 456 Oak Ln, Mumbai, IN 78702",
       location: "456 Oak Ln.",
       roomNum: 2,
       bed: 1,
@@ -271,6 +289,7 @@ createServer({
       price: "2,800",
       forRent: true,
       popular: false,
+      niche: "mumbai",
     });
     server.create("property", {
       id: 20,
@@ -285,12 +304,13 @@ createServer({
       price: "4,500",
       forRent: true,
       popular: false,
+      niche: "paris",
     });
     server.create("property", {
       id: 21,
       imgSrc:
         "https://images.pexels.com/photos/1101140/pexels-photo-1101140.jpeg?auto=compress&cs=tinysrgb&w=600",
-      name: "House in Shades - 789 Maple Ave, Sweden 3214",
+      name: "House in Shades - 789 Maple Ave, Mumbai IN 3214",
       location: "789 Maple Ave.",
       roomNum: 3,
       bed: 2,
@@ -299,6 +319,7 @@ createServer({
       price: "4,500",
       forRent: true,
       popular: true,
+      niche: "mumbai",
     });
   },
 

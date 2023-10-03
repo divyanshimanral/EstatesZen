@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../../server";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { CiLocationOn } from "react-icons/ci";
 import { PiBuildingsDuotone } from "react-icons/pi";
 import { PiArrowsOutCardinalLight } from "react-icons/pi";
@@ -11,18 +11,31 @@ import "./property.scss";
 const Property = () => {
   const [properties, setProperties] = useState([]);
   const [visibleProperties, setVisibleProperties] = useState(6);
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const nicheFilter = searchParams.get("niche");
+  // console.log(nicheFilter)
+
+  //   const filterBtns
+
+  const loadMoreProperty = () => {
+    setVisibleProperties((prevVisibleProperties) => prevVisibleProperties + 3);
+  };
   useEffect(() => {
     fetch("/api/properties")
       .then((res) => res.json())
       .then((data) => setProperties(data.properties));
   }, []);
 
-  const loadMoreProperty = () => {
-    setVisibleProperties((prevVisibleProperties) => prevVisibleProperties + 3);
-  };
   // console.log(properties)
+  const displayProperty = nicheFilter
+    ? properties.filter(
+        (property) => property.niche.toLowerCase() === nicheFilter
+      )
+    : properties;
+  // console.log(displayProperty)
 
-  const propertiesElt = properties
+  const propertiesElt = displayProperty
     .slice(0, visibleProperties)
     .map((property) => (
       <Link
@@ -80,6 +93,38 @@ const Property = () => {
         Real estate can be bought, sold, leased, or rented, and can be a
         valuable investment opportunity. The value of the estate can be...
       </p>
+      <div className="fltrBtns">
+        <button
+          onClick={() => setSearchParams({ niche: "nc" })}
+          className={`${nicheFilter === "nc" && "active"}`}
+        >
+          New York
+        </button>
+        <button
+          onClick={() => setSearchParams({ niche: "mumbai" })}
+          className={`${nicheFilter === "mumbai" && "active"}`}
+        >
+          Mumbai
+        </button>
+        <button
+          onClick={() => setSearchParams({ niche: "paris" })}
+          className={`${nicheFilter === "paris" && "active"}`}
+        >
+          Paris
+        </button>
+        <button
+          onClick={() => setSearchParams({ niche: "london" })}
+          className={`${nicheFilter === "london" && "active"}`}
+        >
+          london
+        </button>
+        <button
+          onClick={() => setSearchParams({})}
+          className={`${nicheFilter === "" && "active"}`}
+        >
+          Show all
+        </button>
+      </div>
       <div className="properties">{propertiesElt}</div>
       {visibleProperties < properties.length && (
         <div className="btnCont">
