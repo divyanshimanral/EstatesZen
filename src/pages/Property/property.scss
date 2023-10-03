@@ -17,6 +17,7 @@
     align-items: center;
     justify-content: space-between;
     button {
+      text-transform: capitalize;
       padding: 8px 20px;
       border: 2px solid var(--primary-color);
       color: var(--primary-color);
@@ -71,11 +72,12 @@
         .location {
           display: flex;
           align-items: center;
-          justify-content: space-evenly;
+          justify-content: flex-start;
           width: 50%;
           p {
             font-weight: 500;
             color: rgb(60, 60, 60);
+            margin-left: 0.5rem;
           }
           svg {
             color: rgb(119, 85, 0);
@@ -152,6 +154,45 @@
         border: none;
         color: white;
         padding-block: 0.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .property-wrapper {
+    .para {
+      width: 70%;
+      padding-bottom: 1rem;
+    }
+    .fltrBtns {
+      width: 70%;
+      margin-left: 2.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .property-wrapper {
+    .fltrBtns {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .property-wrapper {
+    .fltrBtns {
+      width: 90%;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      button {
+        font-size: 0.5rem;
+        width: 80px;
+        font-weight: 900;
+        padding: 1rem;
       }
     }
   }

@@ -20,6 +20,7 @@ createServer({
       forRent: true,
       popular: false,
       niche: "nc",
+      desc: "Introducing the luxurious 'Metropolis Heights' in the heart of New York City. This iconic skyscraper offers breathtaking views of the Manhattan skyline. With its elegant design and world-class amenities, including a rooftop pool and fitness center, it redefines urban living. Secure your slice of Manhattan today at Metropolis Heights.",
     });
     server.create("property", {
       id: 2,
@@ -35,6 +36,7 @@ createServer({
       forRent: true,
       popular: true,
       niche: "london",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 3,
@@ -50,6 +52,7 @@ createServer({
       forRent: false,
       popular: true,
       niche: "london",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 4,
@@ -65,6 +68,7 @@ createServer({
       forRent: true,
       popular: false,
       niche: "nc",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 5,
@@ -80,6 +84,7 @@ createServer({
       forRent: false,
       popular: true,
       niche: "nc",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 6,
@@ -95,6 +100,7 @@ createServer({
       forRent: true,
       popular: false,
       niche: "nc",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 7,
@@ -110,6 +116,7 @@ createServer({
       forRent: false,
       popular: true,
       niche: "mumbai",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 8,
@@ -125,6 +132,7 @@ createServer({
       forRent: true,
       popular: true,
       niche: "paris",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 9,
@@ -140,6 +148,7 @@ createServer({
       forRent: false,
       popular: false,
       niche: "paris",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 10,
@@ -155,6 +164,7 @@ createServer({
       forRent: true,
       popular: true,
       niche: "paris",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 11,
@@ -170,6 +180,7 @@ createServer({
       forRent: true,
       popular: true,
       niche: "london",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 12,
@@ -185,6 +196,7 @@ createServer({
       forRent: true,
       popular: false,
       niche: "london",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 13,
@@ -200,6 +212,7 @@ createServer({
       forRent: true,
       popular: false,
       niche: "london",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 14,
@@ -215,6 +228,7 @@ createServer({
       forRent: true,
       popular: true,
       niche: "london",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 15,
@@ -230,6 +244,7 @@ createServer({
       forRent: true,
       popular: false,
       niche: "paris",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 16,
@@ -245,6 +260,7 @@ createServer({
       forRent: true,
       popular: false,
       niche: "nc",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 17,
@@ -260,6 +276,7 @@ createServer({
       forRent: true,
       popular: true,
       niche: "nc",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 18,
@@ -275,6 +292,7 @@ createServer({
       forRent: true,
       popular: true,
       niche: "nc",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 19,
@@ -290,6 +308,7 @@ createServer({
       forRent: true,
       popular: false,
       niche: "mumbai",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 20,
@@ -305,6 +324,7 @@ createServer({
       forRent: true,
       popular: false,
       niche: "paris",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
     server.create("property", {
       id: 21,
@@ -320,6 +340,7 @@ createServer({
       forRent: true,
       popular: true,
       niche: "mumbai",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non delectus distinctio tenetur possimus optio. Explicabo obcaecati commodi ducimus labore voluptate tempore possimus at ea laboriosam debitis delectus, sint corrupti autem ullam molestiae suscipit. Iure qui aut, explicabo architecto voluptatum autem voluptatem voluptas numquam, facilis, magnam ea ut sunt recusandae! Quas?",
     });
   },
 

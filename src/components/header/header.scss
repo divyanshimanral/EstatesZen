@@ -28,3 +28,25 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .header {
+    nav {
+      width: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .header {
+    flex-direction: column;
+    nav {
+      width: 100%;
+      ul {
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

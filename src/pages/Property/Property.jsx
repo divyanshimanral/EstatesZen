@@ -7,33 +7,48 @@ import { PiArrowsOutCardinalLight } from "react-icons/pi";
 import { LiaBedSolid } from "react-icons/lia";
 import { LiaBathSolid } from "react-icons/lia";
 import "./property.scss";
+import { useDispatch, useSelector } from "react-redux";
+import { useGetPropertiesQuery } from "../../utils/api";
+import { setProperties } from "../../store/propertySlice";
 
 const Property = () => {
-  const [properties, setProperties] = useState([]);
   const [visibleProperties, setVisibleProperties] = useState(6);
   const [searchParams, setSearchParams] = useSearchParams();
+
+  // From rtk
+  const properties = useSelector((state) => state?.properties?.properties);
+  // console.log(properties)
+  const dispatch = useDispatch();
+  const { data, isError, isLoading, isSuccess } = useGetPropertiesQuery();
+
+  useEffect(() => {
+    if (isSuccess) {
+      dispatch(setProperties(data));
+    }
+  }, [data, dispatch, isSuccess]);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+  if (isError) {
+    return <div>Error loading properties.</div>;
+  }
 
   const nicheFilter = searchParams.get("niche");
   // console.log(nicheFilter)
 
-  //   const filterBtns
-
   const loadMoreProperty = () => {
     setVisibleProperties((prevVisibleProperties) => prevVisibleProperties + 3);
   };
-  useEffect(() => {
-    fetch("/api/properties")
-      .then((res) => res.json())
-      .then((data) => setProperties(data.properties));
-  }, []);
 
-  // console.log(properties)
-  const displayProperty = nicheFilter
-    ? properties.filter(
-        (property) => property.niche.toLowerCase() === nicheFilter
-      )
-    : properties;
-  // console.log(displayProperty)
+  const displayProperty = properties
+    ? (nicheFilter
+        ? properties.filter(
+            (property) => property.niche.toLowerCase() === nicheFilter
+          )
+        : properties
+      ).slice(0, visibleProperties)
+    : [];
 
   const propertiesElt = displayProperty
     .slice(0, visibleProperties)
@@ -126,7 +141,7 @@ const Property = () => {
         </button>
       </div>
       <div className="properties">{propertiesElt}</div>
-      {visibleProperties < properties.length && (
+      {visibleProperties < properties?.length && (
         <div className="btnCont">
           <button className="show-more" onClick={loadMoreProperty}>
             Show More

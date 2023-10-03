@@ -2,7 +2,6 @@ import "./App.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Layout from "./components/layout/Layout";
-// import "./server";
 import Property from "./pages/Property/Property";
 import PropertyDetail from "./pages/Property/PropertyDetail/PropertyDetail";
 
