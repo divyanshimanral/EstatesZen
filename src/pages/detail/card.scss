@@ -1,4 +1,10 @@
-.card {
+.properties{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  .card {
   background: #fff;
   color: black;
   width: 400px;
@@ -29,7 +35,7 @@
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      width: 40%;
+      width: 50%;
       p {
         font-weight: 500;
         color: rgb(60, 60, 60);
@@ -104,5 +110,7 @@
     border: none;
     color: white;
     padding-block: 0.5rem;
+    text-align: center;
   }
+}
 }

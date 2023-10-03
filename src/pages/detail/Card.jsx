@@ -23,7 +23,7 @@ const Card = ({ data }) => {
   } = data;
 
   return (
-    <div className="card" key={id}>
+    <Link to='' className="card" key={id}>
       <div className="imgContainer">
         <img src={data.imgSrc} />
       </div>
@@ -65,7 +65,7 @@ const Card = ({ data }) => {
         <button className="rentCont">For Sale</button>
       )}
       {popular && <p className="popular">Popular</p>}
-    </div>
+    </Link>
   );
 };
 

@@ -54,3 +54,4 @@ const JsonServer = () => {
 };
 
 export default JsonServer;
+// json-server --watch db2.json --port 3031

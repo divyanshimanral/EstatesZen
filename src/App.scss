@@ -1,9 +1,17 @@
-.site-wrapper{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    .main{
-        height: auto;
-    }
+.site-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  .main {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 80px;
+  }
+  footer {
+    flex-shrink: 0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
 }

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+.propertyDetails {
+  .propertydetail-card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 2rem;
+    .imgCont {
+      width: 50%;
+      height: auto;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+    }
+    .description {
+      width: 50%;
+      text-align: center;
+      padding-block: 10rem;
+      padding-left: 3rem;
+      h2 {
+        font-family: "Young Serif", serif;
+        font-size: 1.4rem;
+      }
+      .location {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 50%;
+        margin-left: 2.2rem;
+        p {
+          font-weight: 500;
+          color: rgb(60, 60, 60);
+        }
+        svg {
+          color: rgb(119, 85, 0);
+          font-weight: 900;
+        }
+      }
+      .facilities {
+        justify-content: space-around;
+        padding-block: 1rem;
+        font-size: 1.2rem;
+        color: rgb(43, 43, 43);
+        .flex {
+          flex-direction: column;
+          align-items: start;
+        }
+      }
+      .last-section {
+        justify-content: space-between;
+        width: 70%;
+        padding-left: 3.5rem;
+        padding-block: 1rem;
+        font-weight: 500;
+        span {
+          color: var(--primary-color);
+          font-weight: 900;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+.btnCont {
+  text-align: center;
+  .show-more {
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    background: var(--primary-color);
+    color: white;
+    margin-block: 1.5rem;
+  }
+}

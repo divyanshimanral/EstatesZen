@@ -2,6 +2,8 @@
 :root{
   --primary-color:#4a2aff;
   --secondary-color:#3c2aff;
+  // --primary-color:#0275d8;
+  // --secondary-color:#0249d8;
 }
 ::-webkit-scrollbar {
   width: 7px;
@@ -22,8 +24,8 @@
 
 body {
   margin: 0;
-  background-color: #101010;
-  color: #fff;
+  // background-color: #101010;
+  // color: #fff;
 }
 .flex{
   display: flex;
@@ -31,5 +33,5 @@ body {
 }
 a{
   text-decoration: none;
-  color: white;
+  // color: white;
 }
