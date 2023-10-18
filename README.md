@@ -1,5 +1,5 @@
-# Travel-Website_assignment
-This README provides an overview of the "Travel-website_assignment" project, including its technology stack and instructions for setting it up locally for development.
+# EstatesZen
+Find Your Dream Destination with EstatesZen
 
 ## Technology Stack
 The project utilizes the following technologies:
