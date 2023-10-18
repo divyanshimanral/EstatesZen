@@ -1,5 +1,5 @@
 # EstatesZen
-Find Your Dream Destination with EstatesZen
+Find Your Dream Real Estate properties with EstatesZen
 
 ## Technology Stack
 The project utilizes the following technologies:
